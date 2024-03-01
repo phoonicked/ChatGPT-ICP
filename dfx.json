@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "cum_backend": {
+      "main": "src/cum_backend/main.mo",
+      "type": "motoko"
+    },
+    "cum_frontend": {
+      "dependencies": [
+        "cum_backend"
+      ],
+      "source": [
+        "src/cum_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "cum_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
